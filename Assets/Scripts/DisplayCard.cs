@@ -15,11 +15,13 @@ public class DisplayCard : MonoBehaviour
     public int cost;
     public int power;
     public string cardDescription;
+    public Sprite spriteImage;
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI costText;
     public TextMeshProUGUI powerText;
     public TextMeshProUGUI descriptionText;
+    public Image artImage;
 
     private void Start()
     {
@@ -33,11 +35,13 @@ public class DisplayCard : MonoBehaviour
         cost = displayCard[0].cost;
         power = displayCard[0].power;
         cardDescription = displayCard[0].cardDescription;
+        spriteImage = displayCard[0].spriteImage;
 
         nameText.text = " " + cardName;
         costText.text = " " + cost;
         powerText.text = " " + power;
         descriptionText.text = " " + cardDescription;
+        artImage.sprite = spriteImage;
     }
 
 

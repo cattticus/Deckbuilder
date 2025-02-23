@@ -10,11 +10,11 @@ public class CardData : MonoBehaviour
 
     void Awake()
     {
-        cardList.Add(new Card(0, "None", 0, 0, "None"));
-        cardList.Add(new Card(1, "Human", 2, 1, "Basic human"));
-        cardList.Add(new Card(2, "Elf", 3, 3, "Silly lil elf dude"));
-        cardList.Add(new Card(3, "Fairy", 4, 4, "Tiny lil guy"));
-        cardList.Add(new Card(4, "Ogre", 5, 5, "GET OUT ME SWAMP!"));
+        cardList.Add(new Card(0, "None", 0, 0, "None", Resources.Load<Sprite>("elfPunkF") ));
+        cardList.Add(new Card(1, "Human", 2, 1, "Basic human", Resources.Load<Sprite>("humanF")));
+        cardList.Add(new Card(2, "Elf", 3, 3, "Silly lil elf dude", Resources.Load<Sprite>("elfM")));
+        cardList.Add(new Card(3, "Vampire", 4, 4, "You dont wanna get a paper cut around these guys", Resources.Load<Sprite>("vampireM")));
+        cardList.Add(new Card(4, "Medusa", 5, 5, "Don't look her in the eyes", Resources.Load<Sprite>("medusa")));
     }
 
 }
