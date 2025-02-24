@@ -6,10 +6,10 @@ public class CardToHand : MonoBehaviour
     public GameObject HandCard;
     void Start()
     {
-        
+
     }
 
-    
+
     void Update()
     {
         Hand = GameObject.Find("Hand");

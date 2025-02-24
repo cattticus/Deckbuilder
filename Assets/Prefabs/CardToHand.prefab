@@ -379,9 +379,10 @@ GameObject:
   - component: {fileID: 7455284348837504928}
   - component: {fileID: 5352577216218303863}
   - component: {fileID: 2397195719265120097}
+  - component: {fileID: -5115589305854723910}
   m_Layer: 5
   m_Name: CardToHand
-  m_TagString: Untagged
+  m_TagString: Clone
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -479,6 +480,8 @@ MonoBehaviour:
   descriptionText: {fileID: 6112524200114557147}
   artImage: {fileID: 3177868422691016181}
   cardBack: 0
+  Hand: {fileID: 0}
+  numberOfCardsInDeck: 0
 --- !u!114 &2397195719265120097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +495,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 6207260970216946606}
+--- !u!114 &-5115589305854723910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671380427569527075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526d01d85251443409a6d61f3120e1b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hand: {fileID: 0}
+  HandCard: {fileID: 4671380427569527075}
 --- !u!1 &4800083994296204848
 GameObject:
   m_ObjectHideFlags: 0
