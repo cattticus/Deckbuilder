@@ -379,6 +379,8 @@ GameObject:
   - component: {fileID: 7455284348837504928}
   - component: {fileID: 5352577216218303863}
   - component: {fileID: 2397195719265120097}
+  - component: {fileID: 6808672131203724379}
+  - component: {fileID: 5344349123260626912}
   m_Layer: 5
   m_Name: Card
   m_TagString: Untagged
@@ -479,6 +481,8 @@ MonoBehaviour:
   descriptionText: {fileID: 6112524200114557147}
   artImage: {fileID: 3177868422691016181}
   cardBack: 1
+  Hand: {fileID: 0}
+  numberOfCardsInDeck: 0
 --- !u!114 &2397195719265120097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -492,6 +496,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 6207260970216946606}
+--- !u!114 &6808672131203724379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671380427569527075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c09489109c382c6459bf1df1456b4aee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5344349123260626912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4671380427569527075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 0
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: 200
+  m_PreferredHeight: 300
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &4800083994296204848
 GameObject:
   m_ObjectHideFlags: 0
