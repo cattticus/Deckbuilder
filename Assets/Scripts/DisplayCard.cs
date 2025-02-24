@@ -34,6 +34,12 @@ public class DisplayCard : MonoBehaviour
         numberOfCardsInDeck = PlayerDeck.deckSize;
 
         displayCard[0] = CardData.cardList[displayId];
+
+        
+    }
+
+    private void Update()
+    {
         id = displayCard[0].id;
         cardName = displayCard[0].cardName;
         cost = displayCard[0].cost;
@@ -47,10 +53,7 @@ public class DisplayCard : MonoBehaviour
         powerText.text = " " + power;
         descriptionText.text = " " + cardDescription;
         artImage.sprite = spriteImage;
-    }
 
-    private void Update()
-    {
         Hand = GameObject.Find("Hand");
         if(this.transform.parent == Hand.transform.parent)
         {
