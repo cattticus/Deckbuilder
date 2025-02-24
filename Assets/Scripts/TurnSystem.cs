@@ -12,6 +12,8 @@ public class TurnSystem : MonoBehaviour
     public int maxMana;
     public int currentMana;
     public TextMeshProUGUI manaText;
+
+    public static bool startTurn;
     void Start()
     {
         isYourTurn = true;
@@ -20,6 +22,8 @@ public class TurnSystem : MonoBehaviour
 
         maxMana = 1;
         currentMana = 1;
+
+        startTurn = false;
     }
 
     // Update is called once per frame
@@ -50,5 +54,7 @@ public class TurnSystem : MonoBehaviour
 
         maxMana += 1;
         currentMana = maxMana;
+
+        startTurn = true;
     }
 }
