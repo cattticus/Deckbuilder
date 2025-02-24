@@ -4,11 +4,17 @@ using UnityEngine;
 
 public class PlayerDeck : MonoBehaviour
 {
-    public List<Card> deck = new List<Card>();
     public List<Card> container = new List<Card>();
     public int x;
     public int deckSize;
-    
+    public List<Card> deck = new List<Card>();
+
+    public GameObject cardInDeck1;
+    public GameObject cardInDeck2;
+    public GameObject cardInDeck3;
+    public GameObject cardInDeck4;
+
+
     void Start()
     {
         x = 0; 
@@ -24,7 +30,22 @@ public class PlayerDeck : MonoBehaviour
     
     void Update()
     {
-        
+        if(deckSize < 30)
+        {
+            cardInDeck1.SetActive(false);
+        }
+        if (deckSize < 20)
+        {
+            cardInDeck1.SetActive(false);
+        }
+        if (deckSize < 5)
+        {
+            cardInDeck1.SetActive(false);
+        }
+        if (deckSize < 1)
+        {
+            cardInDeck1.SetActive(false);
+        }
     }
 
     public void Shuffle ()
