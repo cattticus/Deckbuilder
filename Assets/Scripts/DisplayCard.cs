@@ -23,13 +23,12 @@ public class DisplayCard : MonoBehaviour
     public TextMeshProUGUI descriptionText;
     public Image artImage;
 
+    public bool cardBack;
+    public static bool staticCardBack; //can only be used once
+
     private void Start()
     {
         displayCard[0] = CardData.cardList[displayId];
-    }
-
-    private void Update()
-    {
         id = displayCard[0].id;
         cardName = displayCard[0].cardName;
         cost = displayCard[0].cost;
@@ -37,11 +36,17 @@ public class DisplayCard : MonoBehaviour
         cardDescription = displayCard[0].cardDescription;
         spriteImage = displayCard[0].spriteImage;
 
+
         nameText.text = " " + cardName;
         costText.text = " " + cost;
         powerText.text = " " + power;
         descriptionText.text = " " + cardDescription;
         artImage.sprite = spriteImage;
+    }
+
+    private void Update()
+    {
+        staticCardBack = cardBack;
     }
 
 
